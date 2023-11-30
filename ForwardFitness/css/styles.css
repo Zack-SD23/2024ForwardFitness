@@ -128,8 +128,14 @@ main{
 	
 }
 
+.map {
+		width: 600px;
+		height: 600px;
+	}
+
 /* media query for tablet viewport */
-@media screen and (min-width:630px) {
+@media screen and (min-width:630px), print 
+{
 	
 	/* Tablet viewport: show tablet-desktop class, hide mobile class */
 	.tablet-desktop {
@@ -162,19 +168,17 @@ Nav li a {
 	padding: 0.1em 0.75;
 }
 
+/* Tablet viewport style rules for main content area */
 
-
-
-} /* end of media query for tablet viewport */
-
-
-
-
-/*#exercises {
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	#exercises {
 	clear:left;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
-	background-color: #f2f2f2; 
+	background:linear-gradient(to right, #ccc, #fff);
+/*	background-color: #f2f2f2;*/
 	padding: 1% 2%;
 }
 
@@ -185,7 +189,101 @@ Nav li a {
 
 #excersices dd {
 	padding: 0.5% 1% 2% 0%
-} */
+} 
+	.tel-num {
+		font-size:1.25em; 
+		
+	}
+	
+	
+
+} /* end of media query for tablet viewport */
+
+/* media query for tablet viewport */
+@media screen and (min-width:1015px), print {
+	
+	
+	/* Media query for desktop viewpoert */
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0; 
+		
+	}
+	/* desktop viewport style rules */
+	nav { 
+	float: right;
+		width: 70%; 
+		margin: 4em 1em 0 0;
+	}
+	
+	nav ul {
+		text-align: right; 
+		
+	}
+	
+	nav li {
+		border: none; 
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: #fff; 
+		
+	}
+	
+	/* desktop viewport:styles rules for main content */
+	
+	main {
+		clear :both; 
+
+	}
+	
+	main h1 { 
+	
+	font-size: 1.8em
+	}
+	
+	#weights, #cardio, #training {
+		width: 29%; 
+		float: left;
+		margin: 0 2%; 
+	}
+	
+	#excercises {
+		clear:left; 
+	}
+	
+
+} /* closing desktop viewport */
+
+/* large screen media query */ 
+@media screen and (min-width: 1921px) {
+	#container {
+		width: 1920px;
+		margin: 0 auto; 
+	}
+	
+	
+	
+}
+	
+	
+
+
+/* end large screen media query */
+
+@media print {
+	
+	body { 
+	background-color: #fff;
+		color: #000; 
+	}
+}
 
 .external-link {
 	color: #606;
@@ -202,7 +300,7 @@ Nav li a {
 
 .map {
 	border: 8px solid #000;
-	width :95px;
+	width :95%;
 	height: 50%;
 	
 }
