@@ -19,6 +19,14 @@ body, header, nav, main, footer, h1, div, img, ul,figure,fication {
 	padding:0;
 	border:0;
 }
+
+/* Style rule for box sizing applies to all elements */ 
+* {
+	box-sizing: border-box;
+	
+}
+
+
 /* style rules for body and imges */
 
 
@@ -81,6 +89,10 @@ main{
 	font-family: 'roboto slab', serif;
 }
 
+.mobile h3 {
+	text-shadow: 5px 5px 8px #ccc; 
+}
+
 .tel-link {
 	background-color: #6C0103;
 	padding: 2%;
@@ -123,8 +135,28 @@ main{
 	font-size: 1.35em;
 	color: #606;
 	font-weight: bold;
+	text-shadow: 5px 5px 8px #ccc;
 	
 }
+
+.frame {
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%; 
+	padding: 20px;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	}
 
 .map {
 		width: 600px;
@@ -147,7 +179,6 @@ main{
 /* tablet viewport: style rule for header */
 
 header {
-	position: static;
 	padding-bottom: 2%;
 }
 
@@ -171,6 +202,18 @@ Nav li a {
 	main ul {
 		margin: 0 0 4% 10%;
 	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	.pic-text {
+		font-size: 1em;
+		padding: 10px;
+	}
+	
 	#exercises {
 	clear:left;
 	border-top: 1px solid #000;
@@ -244,6 +287,20 @@ Nav li a {
 	main h1 { 
 	
 	font-size: 1.8em
+	}
+	
+	.pic-text {
+		font-size: 1.5em;
+		padding: 20px;
+	}
+	
+	.frame {
+		opacity: 0.9;
+	}
+	
+	.frame:hover {
+		opacity: 1;
+		box-shadow: 8px 8px 10px #808080;
 	}
 	
 	#weights, #cardio, #training {
